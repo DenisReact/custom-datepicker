@@ -1,0 +1,10 @@
+.App {
+  padding-top: 20px;
+  padding-inline: 50px;
+}
+
+.range-info {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

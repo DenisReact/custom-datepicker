@@ -1,0 +1,44 @@
+.YearMonthSelect {
+    display: flex;
+    align-items: center;
+    padding: 5px 5px 5px 10px;
+    gap: 15px;
+    border-bottom: 1px solid gray;
+    color: #444;
+}
+
+.YearMonthSelect:last-child {
+    border-bottom: none;
+}
+
+.month-select {
+    display: flex;
+    justify-content: space-between;
+}
+
+.month-btn {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    color: #444;
+}
+
+.month-btn:hover {
+    background-color: #eee;
+}
+
+.current-year {
+    color: #1889c0;
+    font-weight: 500;
+}
+.current-month {
+    border: 1px solid #1889c0;
+}
+
+.selected-month {
+    background-color: #1889c0;
+    color: white;
+}

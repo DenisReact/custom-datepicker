@@ -1,0 +1,69 @@
+.c-day-container,
+.cdc-day span,
+.cdc-day {
+    position: relative;
+    display: block;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.c-day-container {
+    width: 14.285%;
+    height: 16.6666%;
+}
+
+.cdc-day {
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    font-weight: 300;
+    color: #444;
+    text-align: center;
+    padding-inline: 1px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+
+.cdc-day span {
+    font-size: 14px;
+    color: #444;
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cdc-day span:hover {
+    cursor: pointer;
+    background: #eee;
+}
+
+.c-day-container.disabled {
+    pointer-events: none;
+}
+
+.c-day-container.disabled .cdc-day span {
+    background: #fff !important;
+    color: #ddd !important;
+    border: none !important;
+}
+
+.c-day-container.today .cdc-day span {
+    border: 1px solid #1889c0;
+}
+.c-day-container.selected .cdc-day span {
+    background-color: #1889c0;
+    color: white;
+}
+.c-day-container.in-range .cdc-day span {
+    background-color: #1889c099;
+    color: white;
+}
+.c-day-container.weekend-in-range .cdc-day span {
+    /*background: #1889c021;*/
+}
